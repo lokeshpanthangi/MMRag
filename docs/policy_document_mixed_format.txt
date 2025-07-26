@@ -1,0 +1,344 @@
+CORPORATE BANKING POLICY MANUAL
+===============================
+Credit Risk Management and Lending Standards
+Document ID: POL-2024-CRM-001
+Version: 3.2
+Effective Date: February 1, 2024
+
+===============================
+TABLE OF CONTENTS
+===============================
+1. Executive Summary
+2. Policy Objectives and Scope
+3. Credit Risk Framework
+4. Lending Authority Matrix
+5. Underwriting Standards
+6. Portfolio Management Guidelines
+7. Risk Monitoring and Reporting
+8. Compliance and Governance
+
+===============================
+SECTION 1: EXECUTIVE SUMMARY
+===============================
+
+This policy establishes comprehensive guidelines for credit risk management across all lending activities of Premier Financial Corporation. The policy framework is designed to ensure prudent risk-taking while supporting profitable growth and maintaining regulatory compliance.
+
+Our credit philosophy emphasizes relationship banking, thorough credit analysis, and diversified portfolio management. We seek to build long-term partnerships with creditworthy borrowers while maintaining appropriate risk-adjusted returns.
+
+Key Policy Principles:
+- Maintain strong credit culture and discipline
+- Ensure adequate risk-adjusted pricing
+- Diversify credit exposures across industries and geographies
+- Implement robust monitoring and early warning systems
+- Comply with all applicable regulatory requirements
+
+This policy applies to all credit-granting activities including commercial loans, real estate financing, consumer lending, and trade finance facilities.
+
+===============================
+SECTION 2: POLICY OBJECTIVES AND SCOPE
+===============================
+
+Primary Objectives:
+
+1. Risk Management: Establish clear parameters for acceptable credit risk while maintaining portfolio quality metrics within board-approved tolerances.
+
+2. Profitability: Ensure all credit facilities generate appropriate risk-adjusted returns that contribute to the institution's overall profitability targets.
+
+3. Regulatory Compliance: Maintain full compliance with federal and state banking regulations, including fair lending requirements and safety and soundness standards.
+
+4. Growth Strategy: Support strategic business objectives through disciplined credit growth in target markets and customer segments.
+
+Scope of Application:
+
+This policy governs all credit-related activities including:
+- New loan originations and renewals
+- Credit line establishments and modifications
+- Loan participations and syndications
+- Letters of credit and guarantees
+- Derivative transactions with credit components
+
+Exclusions:
+- Investment securities (covered under Investment Policy)
+- Operational risk exposures (covered under Operational Risk Policy)
+- Market risk in trading activities (covered under Market Risk Policy)
+
+===============================
+SECTION 3: CREDIT RISK FRAMEWORK
+===============================
+
+Our credit risk framework incorporates multiple dimensions of risk assessment to ensure comprehensive evaluation of all credit exposures.
+
+Risk Rating System:
+
+We employ a 10-point internal risk rating system aligned with regulatory guidance and industry best practices. The system provides consistent risk assessment across all credit types and enables effective portfolio management.
+
+Risk Rating Definitions and Characteristics:
+
+Rating | Grade | Description | Default Probability | Loss Given Default
+-------|-------|-------------|--------------------|-----------------
+1      | Pass  | Exceptional credit quality, minimal risk | 0.05% | 15%
+2      | Pass  | Strong credit quality, low risk | 0.15% | 20%
+3      | Pass  | Good credit quality, acceptable risk | 0.35% | 25%
+4      | Pass  | Satisfactory credit quality, moderate risk | 0.75% | 30%
+5      | Pass  | Adequate credit quality, average risk | 1.50% | 35%
+6      | Watch | Acceptable but requires monitoring | 3.00% | 40%
+7      | Watch | Marginal quality, heightened monitoring | 6.00% | 45%
+8      | Substandard | Criticized asset, well-defined weakness | 15.00% | 55%
+9      | Doubtful | Collection/liquidation questionable | 35.00% | 70%
+10     | Loss  | Loss expected, charge-off recommended | 95.00% | 90%
+
+Concentration Limits:
+
+To ensure appropriate portfolio diversification, the following concentration limits are established:
+
+Concentration Type | Limit (% of Tier 1 Capital) | Current Level | Status
+-------------------|------------------------------|---------------|--------
+Single Borrower | 15% | 12.3% | Within Limit
+Single Industry | 25% | 18.7% | Within Limit
+Commercial Real Estate | 300% | 245% | Within Limit
+Construction & Development | 100% | 67% | Within Limit
+Owner-Occupied CRE | 80% | 52% | Within Limit
+Non-Owner Occupied CRE | 50% | 38% | Within Limit
+Geographic - Single MSA | 40% | 28% | Within Limit
+Foreign Exposure | 10% | 3% | Within Limit
+
+===============================
+SECTION 4: LENDING AUTHORITY MATRIX
+===============================
+
+Lending authority is delegated based on experience, training, and demonstrated credit judgment. All lending officers must complete annual credit training and maintain current certifications.
+
+Individual Lending Authority:
+
+Position Title | Unsecured Limit | Secured Limit | Total Relationship | Years Experience
+---------------|-----------------|---------------|-------------------|------------------
+Loan Officer I | $50,000 | $150,000 | $250,000 | 2+
+Loan Officer II | $100,000 | $300,000 | $500,000 | 5+
+Senior Loan Officer | $250,000 | $750,000 | $1,250,000 | 8+
+Assistant VP | $500,000 | $1,500,000 | $2,500,000 | 12+
+Vice President | $1,000,000 | $3,000,000 | $5,000,000 | 15+
+Senior VP | $2,500,000 | $7,500,000 | $12,500,000 | 20+
+Chief Credit Officer | $5,000,000 | $15,000,000 | $25,000,000 | 25+
+
+Committee Lending Authority:
+
+Committee Type | Membership | Authority Limit | Meeting Frequency
+---------------|------------|-----------------|------------------
+Loan Committee | 3 Senior Officers | $50,000,000 | Weekly
+Credit Committee | 5 Officers + CCO | $100,000,000 | Bi-weekly
+Board Credit Committee | 5 Directors | $200,000,000 | Monthly
+Full Board | All Directors | No Limit | Quarterly
+
+Special Approval Requirements:
+
+Loan Characteristics Requiring Enhanced Approval:
+
+- Loans exceeding individual authority limits
+- Credits rated 6 or below at origination
+- Loans to bank insiders or related parties
+- Participations where we are not lead bank
+- Credits with non-standard terms or structures
+- Borrowers in declining industries
+- Loans secured by out-of-market collateral
+
+===============================
+SECTION 5: UNDERWRITING STANDARDS
+===============================
+
+Underwriting standards ensure consistent credit evaluation and appropriate risk selection. All credit decisions must be supported by comprehensive analysis and documentation.
+
+Commercial Lending Standards:
+
+For commercial credits, we evaluate the "5 C's" of credit: Character, Capacity, Capital, Collateral, and Conditions. Each element must be satisfactory for credit approval.
+
+Financial Performance Requirements:
+
+Metric | Minimum Requirement | Preferred Level | Industry Benchmark
+-------|---------------------|-----------------|-------------------
+Debt Service Coverage | 1.25x | 1.50x | 1.35x
+Current Ratio | 1.10x | 1.25x | 1.20x
+Debt-to-Worth | 3.00x | 2.00x | 2.50x
+Working Capital | Positive | $500K+ | Varies
+Tangible Net Worth | $1M minimum | $2M+ | Varies
+Liquidity Ratio | 15% | 25% | 20%
+EBITDA Margin | 10% | 15% | Varies by Industry
+
+Real Estate Lending Standards:
+
+Commercial real estate lending requires specialized expertise and enhanced due diligence given the concentration risk and market volatility.
+
+Property Type Loan-to-Value Limits:
+
+Property Type | Maximum LTV | Preferred LTV | Minimum DSCR
+--------------|-------------|---------------|-------------
+Office Buildings | 80% | 75% | 1.25x
+Retail Centers | 75% | 70% | 1.30x
+Industrial/Warehouse | 80% | 75% | 1.25x
+Multifamily (5+ units) | 80% | 75% | 1.20x
+Hotels/Hospitality | 70% | 65% | 1.35x
+Special Purpose | 65% | 60% | 1.40x
+Construction | 80% | 75% | 1.50x
+Land Development | 70% | 65% | N/A
+
+Consumer Lending Standards:
+
+Consumer lending focuses on borrower capacity and credit history while ensuring compliance with fair lending regulations.
+
+Credit Score Requirements by Product:
+
+Product Type | Minimum Score | Preferred Score | Maximum LTV/LTC
+-------------|---------------|-----------------|----------------
+First Mortgage | 620 | 700+ | 95%
+Home Equity Line | 660 | 720+ | 80%
+Auto Loans (New) | 600 | 680+ | 100%
+Auto Loans (Used) | 620 | 700+ | 90%
+Personal Loans | 640 | 720+ | N/A
+Credit Cards | 580 | 650+ | N/A
+
+===============================
+SECTION 6: PORTFOLIO MANAGEMENT GUIDELINES
+===============================
+
+Effective portfolio management requires ongoing monitoring, proactive risk identification, and timely corrective actions. Our approach emphasizes early intervention and relationship preservation.
+
+Portfolio Composition Targets:
+
+Loan Category | Target Allocation | Current Allocation | Variance
+--------------|-------------------|-------------------|----------
+Commercial & Industrial | 35% | 32% | -3%
+Commercial Real Estate | 30% | 34% | +4%
+Residential Real Estate | 20% | 18% | -2%
+Consumer Loans | 10% | 11% | +1%
+Agriculture | 3% | 3% | 0%
+Other | 2% | 2% | 0%
+
+Credit Quality Metrics:
+
+The following metrics are monitored monthly and reported to the Board quarterly:
+
+Metric | Target | Current | Trend | Peer Average
+-------|--------|---------|-------|-------------
+Net Charge-offs | <0.25% | 0.18% | Stable | 0.32%
+Non-performing Assets | <1.00% | 0.67% | Improving | 0.89%
+Past Due 30-89 Days | <2.00% | 1.23% | Stable | 1.67%
+Criticized Assets | <8.00% | 5.45% | Improving | 7.23%
+Loss Provision Coverage | >150% | 187% | Stable | 156%
+Recovery Rate | >40% | 52% | Improving | 38%
+
+===============================
+SECTION 7: RISK MONITORING AND REPORTING
+===============================
+
+Comprehensive risk monitoring enables early identification of potential problems and timely implementation of corrective measures.
+
+Early Warning Indicators:
+
+We maintain a comprehensive early warning system that triggers enhanced monitoring and potential rating downgrades:
+
+Financial Indicators:
+- Declining cash flow or profitability trends
+- Covenant violations or waivers
+- Delayed financial reporting
+- Qualified audit opinions
+- Significant changes in management or ownership
+
+Operational Indicators:
+- Loss of major customers or contracts
+- Labor disputes or regulatory issues
+- Litigation or environmental concerns
+- Industry or economic pressures
+- Competitive disadvantages
+
+Reporting Framework:
+
+Credit Risk Dashboard - Monthly:
+
+Report Section | Key Metrics | Distribution | Action Triggers
+---------------|-------------|--------------|----------------
+Portfolio Overview | Volume, Growth, Composition | Senior Management | >10% variance from targets
+Credit Quality | NPAs, Charge-offs, Ratings | Board Committee | Adverse trends >2 quarters
+Concentrations | Industry, Geographic, Borrower | Risk Committee | Approaching policy limits
+Problem Assets | Watch list, Criticized assets | Credit Committee | New additions or upgrades
+Provision Analysis | Coverage ratios, Methodology | CFO, Auditors | Significant changes
+
+===============================
+SECTION 8: COMPLIANCE AND GOVERNANCE
+===============================
+
+Strong governance and compliance frameworks ensure adherence to regulatory requirements and internal policies.
+
+Policy Governance:
+
+This policy is subject to annual review and approval by the Board of Directors. Interim modifications may be approved by the Board Credit Committee with subsequent Board ratification.
+
+Governance Structure:
+
+Role | Responsibility | Reporting Line | Meeting Frequency
+-----|----------------|----------------|------------------
+Board of Directors | Policy approval, oversight | Shareholders | Monthly
+Board Credit Committee | Credit policy, large exposures | Full Board | Monthly
+Chief Credit Officer | Policy implementation | CEO | Daily
+Credit Committee | Credit decisions, monitoring | CCO | Bi-weekly
+Loan Review | Independent assessment | Audit Committee | Quarterly
+
+Compliance Monitoring:
+
+Compliance Area | Monitoring Frequency | Responsible Party | Reporting
+----------------|---------------------|-------------------|----------
+Lending Limits | Daily | Credit Administration | Weekly
+Concentration Limits | Weekly | Risk Management | Monthly
+Fair Lending | Monthly | Compliance Officer | Quarterly
+Credit Documentation | Ongoing | Loan Operations | Monthly
+Regulatory Reporting | As Required | Finance | Per Schedule
+
+Training Requirements:
+
+All credit personnel must complete:
+- Annual credit policy training (8 hours)
+- Fair lending compliance training (4 hours)
+- Industry-specific training (varies)
+- Regulatory update sessions (quarterly)
+
+Training Completion Status:
+
+Department | Required Hours | Completed | Compliance Rate
+-----------|----------------|-----------|----------------
+Commercial Lending | 16 | 15.2 | 95%
+Real Estate Lending | 20 | 19.8 | 99%
+Consumer Lending | 12 | 11.7 | 98%
+Credit Administration | 14 | 13.9 | 99%
+Loan Review | 18 | 18.0 | 100%
+
+===============================
+POLICY APPROVAL AND AUTHORIZATION
+===============================
+
+This policy has been reviewed and approved by the appropriate governance bodies:
+
+Prepared by: Chief Credit Officer
+Date: January 15, 2024
+
+Reviewed by: Risk Management Committee
+Date: January 22, 2024
+
+Approved by: Board Credit Committee
+Date: January 29, 2024
+
+Ratified by: Board of Directors
+Date: February 1, 2024
+
+Next Review Date: February 1, 2025
+
+===============================
+REVISION HISTORY
+===============================
+
+Version | Date | Changes | Approved By
+--------|------|---------|------------
+3.0 | Feb 2023 | Initial comprehensive revision | Board
+3.1 | Aug 2023 | Updated concentration limits | Credit Committee
+3.2 | Feb 2024 | Enhanced monitoring requirements | Board
+
+===============================
+END OF DOCUMENT
+===============================

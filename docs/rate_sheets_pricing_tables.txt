@@ -1,0 +1,331 @@
+PREMIER FINANCIAL SERVICES
+RATE SHEET & PRICING MATRIX
+===========================
+Effective Date: March 1, 2024
+Valid Through: March 31, 2024
+Rate Sheet ID: RS-2024-03-001
+
+===========================
+MORTGAGE LOAN RATES
+===========================
+
+CONVENTIONAL FIXED RATE MORTGAGES
+----------------------------------
+
+Loan Term | Base Rate | APR   | Points | Lock Period | Rate Adjustment Factors
+----------|-----------|-------|--------|-------------|------------------------
+15 Year   | 6.125%    | 6.247%| 0.50   | 60 days     | See Matrix Below
+20 Year   | 6.375%    | 6.489%| 0.75   | 60 days     | See Matrix Below
+25 Year   | 6.625%    | 6.731%| 1.00   | 60 days     | See Matrix Below
+30 Year   | 6.875%    | 6.973%| 1.25   | 60 days     | See Matrix Below
+
+RATE ADJUSTMENT MATRIX - CONVENTIONAL LOANS
+--------------------------------------------
+
+Credit Score Adjustments:
+Credit Score Range | Rate Adjustment | Additional Points
+-------------------|-----------------|------------------
+740 and above      | -0.250%         | -0.25
+720 - 739          | -0.125%         | 0.00
+700 - 719          | 0.000%          | 0.00
+680 - 699          | +0.125%         | +0.25
+660 - 679          | +0.250%         | +0.50
+640 - 659          | +0.500%         | +0.75
+620 - 639          | +0.750%         | +1.00
+600 - 619          | +1.000%         | +1.50
+Below 600          | Case by Case    | Case by Case
+
+Loan-to-Value Adjustments:
+LTV Range    | Rate Adjustment | Additional Points | PMI Required
+-------------|-----------------|-------------------|-------------
+80% and below| 0.000%          | 0.00              | No
+80.01% - 85% | +0.125%         | +0.25             | Yes
+85.01% - 90% | +0.250%         | +0.50             | Yes
+90.01% - 95% | +0.375%         | +0.75             | Yes
+Above 95%    | +0.500%         | +1.00             | Yes
+
+Property Type Adjustments:
+Property Type        | Rate Adjustment | Additional Points
+--------------------|-----------------|------------------
+Single Family       | 0.000%          | 0.00
+Townhouse/Condo     | +0.125%         | +0.25
+2-4 Unit Investment | +0.750%         | +1.50
+Manufactured Home   | +0.500%         | +1.00
+
+===========================
+JUMBO MORTGAGE RATES
+===========================
+
+JUMBO FIXED RATE MORTGAGES (Loans > $766,550)
+----------------------------------------------
+
+Loan Term | Base Rate | APR   | Points | Minimum Down | Max LTV
+----------|-----------|-------|--------|--------------|--------
+15 Year   | 6.250%    | 6.367%| 0.75   | 20%          | 80%
+20 Year   | 6.500%    | 6.611%| 1.00   | 20%          | 80%
+30 Year   | 7.000%    | 7.103%| 1.50   | 20%          | 80%
+
+JUMBO ADJUSTABLE RATE MORTGAGES
+-------------------------------
+
+Product Type    | Initial Rate | Margin | Index | Caps Structure | APR
+----------------|--------------|--------|-------|----------------|-------
+5/1 ARM         | 5.750%       | 2.75%  | SOFR  | 2/2/5          | 6.234%
+7/1 ARM         | 6.000%       | 2.75%  | SOFR  | 5/2/5          | 6.445%
+10/1 ARM        | 6.250%       | 2.75%  | SOFR  | 5/2/5          | 6.623%
+
+===========================
+COMMERCIAL LOAN RATES
+===========================
+
+COMMERCIAL REAL ESTATE LOANS
+----------------------------
+
+Property Type           | Base Rate | Margin Range | Max LTV | Min DSCR | Term Options
+------------------------|-----------|--------------|---------|----------|-------------
+Office Buildings        | 7.25%     | +1.50-3.00% | 75%     | 1.25x    | 5-25 years
+Retail Centers          | 7.50%     | +1.75-3.25% | 70%     | 1.30x    | 5-20 years
+Industrial/Warehouse    | 7.00%     | +1.25-2.75% | 80%     | 1.20x    | 5-25 years
+Multifamily (5+ units)  | 6.75%     | +1.00-2.50% | 80%     | 1.20x    | 5-30 years
+Hotels                  | 8.00%     | +2.00-4.00% | 65%     | 1.35x    | 5-15 years
+Special Purpose         | 8.50%     | +2.50-4.50% | 60%     | 1.40x    | 5-15 years
+
+COMMERCIAL & INDUSTRIAL LOANS
+-----------------------------
+
+Loan Size Range    | Base Rate | Margin Range | Typical Term | Collateral Req
+-------------------|-----------|--------------|--------------|---------------
+$100K - $500K      | 8.50%     | +2.00-4.00% | 1-5 years    | Business Assets
+$500K - $1M        | 8.25%     | +1.75-3.50% | 1-7 years    | Business Assets
+$1M - $5M          | 8.00%     | +1.50-3.00% | 1-10 years   | Mixed Collateral
+$5M - $25M         | 7.75%     | +1.25-2.75% | 1-15 years   | Mixed Collateral
+Over $25M          | 7.50%     | +1.00-2.50% | 1-20 years   | Negotiable
+
+RISK-BASED PRICING ADJUSTMENTS - COMMERCIAL
+-------------------------------------------
+
+Credit Rating | Rate Adjustment | Fee Adjustment | Covenant Requirements
+--------------|-----------------|----------------|----------------------
+Exceptional   | -0.50%          | -0.25%         | Financial reporting only
+Strong        | -0.25%          | 0.00%          | Quarterly financials
+Good          | 0.00%           | 0.00%          | Standard covenants
+Satisfactory  | +0.25%          | +0.25%         | Enhanced covenants
+Adequate      | +0.50%          | +0.50%         | Restrictive covenants
+Watch         | +1.00%          | +1.00%         | Monthly reporting
+
+===========================
+CONSUMER LOAN RATES
+===========================
+
+AUTO LOANS
+----------
+
+Vehicle Age    | New (0-1 yr) | Used (2-3 yr) | Used (4-6 yr) | Used (7+ yr)
+---------------|---------------|----------------|----------------|-------------
+Rate Range     | 5.99%-8.99%   | 6.49%-9.49%    | 6.99%-9.99%    | 7.99%-12.99%
+Max Term       | 84 months     | 72 months      | 60 months      | 48 months
+Max LTV        | 110%          | 100%           | 90%            | 80%
+Min Credit     | 600           | 620            | 640            | 660
+
+Credit Score Tiers - Auto Loans:
+Credit Score | Rate Tier | New Vehicle | Used Vehicle | Max Term
+-------------|-----------|-------------|--------------|----------
+750+         | Tier 1    | 5.99%       | 6.49%        | 84 months
+700-749      | Tier 2    | 6.49%       | 6.99%        | 72 months
+650-699      | Tier 3    | 7.49%       | 7.99%        | 66 months
+600-649      | Tier 4    | 8.99%       | 9.99%        | 60 months
+Below 600    | Tier 5    | Case by Case| Case by Case | 48 months
+
+PERSONAL LOANS
+--------------
+
+Loan Amount Range | Rate Range    | Term Options | Credit Score Req | Income Req
+------------------|---------------|--------------|------------------|------------
+$5,000 - $15,000  | 9.99%-16.99% | 24-60 months | 640+             | $35,000+
+$15,001 - $35,000 | 8.99%-15.99% | 36-72 months | 660+             | $50,000+
+$35,001 - $50,000 | 7.99%-14.99% | 48-84 months | 680+             | $75,000+
+Over $50,000      | 6.99%-12.99% | 60-96 months | 720+             | $100,000+
+
+HOME EQUITY PRODUCTS
+-------------------
+
+HOME EQUITY LINE OF CREDIT (HELOC)
+Introductory Rate: 5.99% for 6 months
+Ongoing Rate: Prime + 0.50% (Currently 8.75%)
+Maximum Rate: 18.00%
+Credit Limit: Up to 80% CLTV
+Draw Period: 10 years
+Repayment Period: 20 years
+
+HOME EQUITY LOANS (Fixed Rate)
+Loan Amount    | Rate Range    | Term Options | Max CLTV | Min Credit Score
+---------------|---------------|--------------|----------|------------------
+$25,000-$50,000| 7.25%-9.25%  | 5-15 years   | 80%      | 660
+$50,001-$100,000| 6.75%-8.75% | 5-20 years   | 80%      | 680
+Over $100,000  | 6.25%-8.25%  | 5-30 years   | 75%      | 700
+
+===========================
+DEPOSIT RATES
+===========================
+
+SAVINGS AND MONEY MARKET ACCOUNTS
+---------------------------------
+
+Account Type           | Balance Tier    | Interest Rate | APY   | Min Balance
+-----------------------|-----------------|---------------|-------|------------
+Regular Savings        | All Balances    | 0.50%         | 0.50% | $100
+Money Market           | $0-$9,999       | 1.00%         | 1.00% | $2,500
+Money Market           | $10,000-$49,999 | 1.25%         | 1.26% | $2,500
+Money Market           | $50,000-$99,999 | 1.50%         | 1.51% | $2,500
+Money Market           | $100,000+       | 1.75%         | 1.76% | $2,500
+High-Yield Savings     | $0-$24,999      | 2.25%         | 2.27% | $1,000
+High-Yield Savings     | $25,000+        | 2.50%         | 2.53% | $1,000
+
+CERTIFICATES OF DEPOSIT
+-----------------------
+
+Term Length | Minimum Deposit | Interest Rate | APY   | Early Withdrawal Penalty
+------------|-----------------|---------------|-------|------------------------
+3 months    | $1,000          | 2.75%         | 2.78% | 90 days interest
+6 months    | $1,000          | 3.25%         | 3.29% | 180 days interest
+12 months   | $1,000          | 3.75%         | 3.81% | 365 days interest
+18 months   | $1,000          | 4.00%         | 4.08% | 365 days interest
+24 months   | $1,000          | 4.25%         | 4.34% | 365 days interest
+36 months   | $1,000          | 4.50%         | 4.60% | 365 days interest
+48 months   | $1,000          | 4.75%         | 4.86% | 365 days interest
+60 months   | $1,000          | 5.00%         | 5.12% | 365 days interest
+
+JUMBO CERTIFICATES OF DEPOSIT ($100,000+)
+-----------------------------------------
+
+Term Length | Interest Rate | APY   | Rate Premium vs Regular CD
+------------|---------------|-------|---------------------------
+3 months    | 3.00%         | 3.04% | +0.25%
+6 months    | 3.50%         | 3.56% | +0.25%
+12 months   | 4.00%         | 4.08% | +0.25%
+18 months   | 4.25%         | 4.34% | +0.25%
+24 months   | 4.50%         | 4.60% | +0.25%
+36 months   | 4.75%         | 4.86% | +0.25%
+48 months   | 5.00%         | 5.12% | +0.25%
+60 months   | 5.25%         | 5.39% | +0.25%
+
+===========================
+CREDIT CARD RATES
+===========================
+
+CONSUMER CREDIT CARDS
+--------------------
+
+Card Type              | APR Range      | Annual Fee | Credit Limit Range | Rewards
+-----------------------|----------------|------------|--------------------|---------
+Basic Rewards          | 16.99%-24.99% | $0         | $500-$15,000       | 1% Cash Back
+Platinum Rewards       | 14.99%-22.99% | $95        | $2,000-$25,000     | 1.5% Cash Back
+Premium Travel         | 17.99%-25.99% | $450       | $5,000-$50,000     | 2x Points
+Secured Card           | 19.99%-24.99% | $25        | $300-$5,000        | None
+Student Card           | 18.99%-26.99% | $0         | $500-$2,500        | 1% Cash Back
+
+BUSINESS CREDIT CARDS
+--------------------
+
+Card Type              | APR Range      | Annual Fee | Credit Limit Range | Features
+-----------------------|----------------|------------|--------------------|---------
+Business Cash          | 15.99%-23.99% | $0         | $1,000-$50,000     | 1.5% Cash Back
+Business Travel        | 16.99%-24.99% | $150       | $2,000-$100,000    | 2x Travel Points
+Corporate Card         | 13.99%-21.99% | $200       | $10,000-$250,000   | Expense Management
+
+===========================
+FEE SCHEDULE
+===========================
+
+LOAN ORIGINATION FEES
+--------------------
+
+Loan Type                    | Origination Fee | Processing Fee | Underwriting Fee
+-----------------------------|-----------------|----------------|------------------
+Mortgage Loans              | 1.00%           | $450           | $850
+Jumbo Mortgages             | 1.25%           | $650           | $1,200
+Commercial Real Estate      | 1.50%           | $1,500         | $2,500
+Commercial & Industrial     | 1.25%           | $750           | $1,500
+SBA Loans                   | 2.75%           | $1,000         | $2,000
+Auto Loans                  | $0              | $150           | $0
+Personal Loans              | 2.00%           | $100           | $200
+Home Equity Loans           | $500 flat       | $350           | $450
+HELOC                       | $0              | $350           | $450
+
+OTHER LOAN FEES
+--------------
+
+Fee Type                     | Amount          | When Charged
+-----------------------------|-----------------|------------------
+Late Payment Fee             | 5% of payment   | After 15 days
+NSF Fee                      | $35             | Per occurrence
+Loan Modification Fee        | $500            | At modification
+Assumption Fee               | $750            | At assumption
+Prepayment Penalty           | Varies by loan  | Early payoff
+Flood Certification         | $25             | At origination
+Appraisal Fee               | $450-$2,500     | At origination
+Title Insurance             | Varies          | At closing
+Recording Fees              | Varies by county| At closing
+
+===========================
+RATE LOCK POLICIES
+===========================
+
+RATE LOCK PERIODS AND FEES
+--------------------------
+
+Lock Period | Standard Fee | Extended Fee | Float Down Option
+------------|--------------|--------------|------------------
+30 days     | No charge   | N/A          | Not available
+45 days     | No charge   | N/A          | $500
+60 days     | No charge   | N/A          | $750
+90 days     | 0.125%      | N/A          | $1,000
+120 days    | 0.250%      | N/A          | $1,500
+180 days    | 0.500%      | N/A          | $2,000
+
+RATE LOCK EXTENSIONS
+-------------------
+
+Original Lock | Extension Period | Extension Fee
+--------------|------------------|---------------
+30-60 days    | +30 days         | 0.125%
+90 days       | +30 days         | 0.250%
+120 days      | +30 days         | 0.375%
+180 days      | +30 days         | 0.500%
+
+===========================
+DISCLAIMERS AND NOTES
+===========================
+
+IMPORTANT RATE INFORMATION:
+
+1. All rates are subject to change without notice
+2. Rates shown are for qualified borrowers only
+3. Additional fees may apply based on loan characteristics
+4. All loans subject to credit approval and underwriting
+5. Property insurance and flood insurance may be required
+6. Escrow account may be required for taxes and insurance
+7. Prepayment penalties may apply to certain loan products
+8. APR calculations include applicable fees and costs
+9. Rate locks are subject to availability and approval
+10. Special promotional rates may be available
+
+CONTACT INFORMATION:
+
+Loan Department: (555) 123-4567
+Mortgage Hotline: (555) 123-LOAN
+Online Applications: www.premierfinancial.com
+Email: loans@premierfinancial.com
+
+===========================
+AUTHORIZATION
+===========================
+
+Rate Sheet Prepared By: Treasury Department
+Approved By: Asset/Liability Committee
+Effective Date: March 1, 2024
+Next Review Date: March 15, 2024
+
+===========================
+END OF RATE SHEET
+===========================

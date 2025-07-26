@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG Banking Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 1000px;
+            padding: 30px;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .chat-container {
+            display: flex;
+            gap: 20px;
+            height: 600px;
+        }
+
+        .chat-history {
+            flex: 1;
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            overflow-y: auto;
+            border: 1px solid #e9ecef;
+        }
+
+        .input-section {
+            flex: 0 0 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .input-group {
+            position: relative;
+        }
+
+        .input-group textarea {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            font-size: 16px;
+            resize: vertical;
+            min-height: 120px;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .input-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            flex: 1;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+            flex: 0 0 auto;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+
+        .message {
+            margin-bottom: 20px;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message-question {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 15px 15px 5px 15px;
+            margin-left: 20%;
+        }
+
+        .message-answer {
+            background: white;
+            border: 1px solid #e9ecef;
+            padding: 20px;
+            border-radius: 15px 15px 15px 5px;
+            margin-right: 20%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .answer-content {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .sources {
+            border-top: 1px solid #e9ecef;
+            padding-top: 15px;
+        }
+
+        .sources h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .source-item {
+            background: #f8f9fa;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            border-left: 3px solid #667eea;
+        }
+
+        .source-meta {
+            font-size: 12px;
+            color: #6c757d;
+            margin-bottom: 5px;
+        }
+
+        .source-content {
+            font-size: 13px;
+            color: #495057;
+            font-style: italic;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            color: #667eea;
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #f5c6cb;
+            margin-bottom: 15px;
+        }
+
+        .empty-state {
+            text-align: center;
+            color: #6c757d;
+            padding: 40px 20px;
+        }
+
+        .empty-state svg {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 15px;
+            opacity: 0.5;
+        }
+
+        @media (max-width: 768px) {
+            .chat-container {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .input-section {
+                flex: none;
+                order: -1;
+            }
+
+            .chat-history {
+                min-height: 400px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏦 RAG Banking Assistant</h1>
+            <p>Ask questions about banking policies, loan procedures, and regulatory compliance</p>
+        </div>
+
+        <div class="chat-container">
+            <div class="chat-history" id="chatHistory">
+                <div class="empty-state">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                    <h3>Welcome to RAG Banking Assistant</h3>
+                    <p>Start by asking a question about banking policies or procedures</p>
+                </div>
+            </div>
+
+            <div class="input-section">
+                <div class="input-group">
+                    <textarea 
+                        id="questionInput" 
+                        placeholder="Ask a question about banking policies, loan procedures, compliance, or any other banking-related topic..."
+                        rows="4"
+                    ></textarea>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-primary" id="askBtn" onclick="askQuestion()">
+                        Ask Question
+                    </button>
+                    <button class="btn btn-secondary" id="clearBtn" onclick="clearChat()">
+                        Clear
+                    </button>
+                </div>
+
+                <div class="loading" id="loading">
+                    <div class="loading-spinner"></div>
+                    Processing your question...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let conversationHistory = [];
+
+        function askQuestion() {
+            const questionInput = document.getElementById('questionInput');
+            const question = questionInput.value.trim();
+            
+            if (!question) {
+                alert('Please enter a question');
+                return;
+            }
+
+            // Show loading state
+            setLoadingState(true);
+            
+            // Add question to chat
+            addMessageToChat('question', question);
+            
+            // Clear input
+            questionInput.value = '';
+
+            // Send request to backend
+            fetch('/api/ask', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ question: question })
+            })
+            .then(response => response.json())
+            .then(data => {
+                setLoadingState(false);
+                
+                if (data.error) {
+                    addErrorToChat(data.error);
+                } else {
+                    addAnswerToChat(data.answer, data.sources);
+                    conversationHistory.push({ question: question, answer: data.answer });
+                }
+            })
+            .catch(error => {
+                setLoadingState(false);
+                addErrorToChat('Failed to get response: ' + error.message);
+            });
+        }
+
+        function addMessageToChat(type, content) {
+            const chatHistory = document.getElementById('chatHistory');
+            
+            // Remove empty state if it exists
+            const emptyState = chatHistory.querySelector('.empty-state');
+            if (emptyState) {
+                emptyState.remove();
+            }
+
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message';
+            
+            if (type === 'question') {
+                messageDiv.innerHTML = `
+                    <div class="message-question">
+                        <strong>You:</strong> ${escapeHtml(content)}
+                    </div>
+                `;
+            }
+            
+            chatHistory.appendChild(messageDiv);
+            chatHistory.scrollTop = chatHistory.scrollHeight;
+        }
+
+        function addAnswerToChat(answer, sources) {
+            const chatHistory = document.getElementById('chatHistory');
+            
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message';
+            
+            let sourcesHtml = '';
+            if (sources && sources.length > 0) {
+                sourcesHtml = `
+                    <div class="sources">
+                        <h4>📚 Sources</h4>
+                        ${sources.map(source => `
+                            <div class="source-item">
+                                <div class="source-meta">
+                                    📄 ${escapeHtml(source.source)} ${source.page !== 'N/A' ? `(Page ${source.page})` : ''}
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            }
+            
+            messageDiv.innerHTML = `
+                <div class="message-answer">
+                    <div class="answer-content">
+                        <strong>🤖 Assistant:</strong><br>
+                        ${escapeHtml(answer).replace(/\n/g, '<br>')}
+                    </div>
+                    ${sourcesHtml}
+                </div>
+            `;
+            
+            chatHistory.appendChild(messageDiv);
+            chatHistory.scrollTop = chatHistory.scrollHeight;
+        }
+
+        function addErrorToChat(error) {
+            const chatHistory = document.getElementById('chatHistory');
+            
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error';
+            errorDiv.innerHTML = `<strong>❌ Error:</strong> ${escapeHtml(error)}`;
+            
+            chatHistory.appendChild(errorDiv);
+            chatHistory.scrollTop = chatHistory.scrollHeight;
+        }
+
+        function setLoadingState(isLoading) {
+            const askBtn = document.getElementById('askBtn');
+            const loading = document.getElementById('loading');
+            const questionInput = document.getElementById('questionInput');
+            
+            askBtn.disabled = isLoading;
+            questionInput.disabled = isLoading;
+            loading.style.display = isLoading ? 'block' : 'none';
+        }
+
+        function clearChat() {
+            const chatHistory = document.getElementById('chatHistory');
+            chatHistory.innerHTML = `
+                <div class="empty-state">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                    <h3>Chat Cleared</h3>
+                    <p>Start by asking a new question</p>
+                </div>
+            `;
+            
+            conversationHistory = [];
+            
+            // Clear conversation on backend
+            fetch('/api/clear', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            });
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Allow Enter key to submit (Shift+Enter for new line)
+        document.getElementById('questionInput').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                askQuestion();
+            }
+        });
+    </script>
+</body>
+</html>

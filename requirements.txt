@@ -1,0 +1,19 @@
+# Core dependencies for RAG system
+langchain
+langchain-community
+langchain-nomic
+langchain-qdrant
+qdrant-client
+python-dotenv
+PyPDF2
+pypdf
+
+# Nomic embeddings
+nomic
+
+# Web application dependencies
+flask
+flask-cors
+
+# Optional: For better PDF processing
+unstructured[pdf]

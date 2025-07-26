@@ -1,0 +1,168 @@
+PREMIER FINANCIAL SERVICES
+LOAN HANDBOOK & AMORTIZATION GUIDE
+===========================================
+
+Section 1: Loan Product Overview
+
+This handbook provides comprehensive amortization schedules and payment calculations for our loan products. All calculations are based on standard industry practices and regulatory requirements.
+
+===========================================
+AMORTIZATION TABLE - 30-YEAR FIXED MORTGAGE
+===========================================
+
+Loan Amount: $350,000
+Interest Rate: 6.75% APR
+Term: 360 months (30 years)
+Monthly Payment: $2,270.94
+
+Payment#  Principal  Interest   Balance    Cumulative Interest
+-------   ---------  --------   --------   -------------------
+1         $583.44    $1,968.75  $349,416.56    $1,968.75
+2         $586.72    $1,965.47  $348,829.84    $3,934.22
+3         $589.02    $1,962.17  $348,240.82    $5,896.39
+4         $592.34    $1,958.85  $347,648.48    $7,855.24
+5         $595.68    $1,955.51  $347,052.80    $9,810.75
+6         $599.04    $1,952.15  $346,453.76    $11,762.90
+7         $602.42    $1,948.77  $345,851.34    $13,711.67
+8         $605.82    $1,945.37  $345,245.52    $15,657.04
+9         $609.24    $1,941.95  $344,636.28    $17,598.99
+10        $612.68    $1,938.51  $344,023.60    $19,537.50
+11        $616.14    $1,935.05  $343,407.46    $21,472.55
+12        $619.62    $1,931.57  $342,787.84    $23,404.12
+
+Year 1 Summary:
+Total Payments: $27,251.28
+Principal Paid: $7,212.16
+Interest Paid: $20,039.12
+Remaining Balance: $342,787.84
+
+===========================================
+COMPLEX AMORTIZATION - ADJUSTABLE RATE MORTGAGE
+===========================================
+
+Loan Amount: $500,000
+Initial Rate: 4.25% (Years 1-5)
+Adjustment: +2.5% (Years 6-10)
+Final Rate: 7.25% (Years 11-30)
+Term: 360 months
+
+PHASE 1 (Months 1-60): 4.25% APR
+Monthly Payment: $2,459.70
+
+PHASE 2 (Months 61-120): 6.75% APR
+Recalculated Payment: $3,247.89
+Remaining Balance at Month 60: $456,234.78
+
+PHASE 3 (Months 121-360): 7.25% APR
+Recalculated Payment: $3,456.12
+Remaining Balance at Month 120: $423,567.89
+
+===========================================
+COMMERCIAL LOAN AMORTIZATION
+===========================================
+
+Loan Type: Commercial Real Estate
+Loan Amount: $1,250,000
+Interest Rate: 7.50% APR
+Term: 300 months (25 years)
+Monthly Payment: $9,270.45
+
+Quarterly Summary (First Year):
+
+Q1 2024:
+Payments Made: $27,811.35
+Principal Reduction: $4,623.78
+Interest Paid: $23,187.57
+Balance: $1,245,376.22
+
+Q2 2024:
+Payments Made: $27,811.35
+Principal Reduction: $4,768.92
+Interest Paid: $23,042.43
+Balance: $1,240,607.30
+
+Q3 2024:
+Payments Made: $27,811.35
+Principal Reduction: $4,918.67
+Interest Paid: $22,892.68
+Balance: $1,235,688.63
+
+Q4 2024:
+Payments Made: $27,811.35
+Principal Reduction: $5,073.12
+Interest Paid: $22,738.23
+Balance: $1,230,615.51
+
+===========================================
+BIWEEKLY PAYMENT ACCELERATION TABLE
+===========================================
+
+Standard 30-Year vs Biweekly Comparison
+Loan Amount: $400,000
+Interest Rate: 6.25%
+
+Monthly Payment Schedule:
+Payment: $2,462.87
+Total Interest: $486,633.20
+Payoff Time: 30 years
+
+Biweekly Payment Schedule:
+Payment: $1,231.44 (every 2 weeks)
+Total Interest: $386,247.89
+Payoff Time: 25.5 years
+Savings: $100,385.31
+
+===========================================
+PREPAYMENT SCENARIOS
+===========================================
+
+Base Loan: $300,000 at 5.75% for 30 years
+Standard Payment: $1,751.39
+
+Scenario A - Extra $100/month:
+Payoff Time: 25.8 years
+Interest Savings: $47,892.34
+
+Scenario B - Extra $250/month:
+Payoff Time: 22.1 years
+Interest Savings: $89,456.78
+
+Scenario C - Annual Lump Sum $5,000:
+Payoff Time: 19.7 years
+Interest Savings: $134,567.23
+
+===========================================
+INTEREST RATE SENSITIVITY ANALYSIS
+===========================================
+
+Loan Amount: $250,000
+Term: 30 years
+
+Rate    Monthly Payment    Total Interest
+5.00%   $1,342.05         $233,139.46
+5.25%   $1,380.03         $246,810.84
+5.50%   $1,418.67         $260,800.12
+5.75%   $1,457.96         $275,105.60
+6.00%   $1,498.88         $289,726.08
+6.25%   $1,539.29         $304,664.40
+6.50%   $1,580.17         $319,861.20
+6.75%   $1,621.39         $335,300.40
+7.00%   $1,663.26         $350,973.60
+
+===========================================
+REGULATORY COMPLIANCE NOTES
+===========================================
+
+- All calculations comply with TILA-RESPA requirements
+- APR calculations include all applicable fees
+- Escrow estimates based on current tax/insurance rates
+- Private Mortgage Insurance (PMI) calculated separately
+- Good Faith Estimate provided within 3 business days
+
+Document Version: 2024.1
+Last Updated: March 15, 2024
+Approved By: Chief Credit Officer
+
+===========================================
+END OF DOCUMENT
+===========================================
