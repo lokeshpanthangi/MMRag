@@ -1,4 +1,6 @@
 import os
+import tkinter as tk
+from tkinter import filedialog, messagebox
 from dotenv import load_dotenv
 from langchain_community.document_loaders import PyPDFLoader, TextLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -12,25 +14,60 @@ from uuid import uuid4
 load_dotenv()
 
 
-# === Step 1: Load PDFs and TXT files ===
-def load_documents_from_folder(folder_path):
+# === Step 1: Select and Load Files ===
+def select_files():
+    """Use tkinter file dialog to select PDF and TXT files"""
+    root = tk.Tk()
+    root.withdraw()  # Hide the main window
+    
+    # Configure file dialog
+    file_types = [
+        ('All supported files', '*.pdf;*.txt'),
+        ('PDF files', '*.pdf'),
+        ('Text files', '*.txt'),
+        ('All files', '*.*')
+    ]
+    
+    selected_files = filedialog.askopenfilenames(
+        title="Select PDF and TXT files to index",
+        filetypes=file_types
+    )
+    
+    root.destroy()
+    
+    if not selected_files:
+        messagebox.showinfo("No files selected", "No files were selected. Exiting...")
+        return None
+    
+    return list(selected_files)
+
+def load_documents_from_files(file_paths):
+    """Load documents from selected file paths"""
     all_docs = []
-    file_names = os.listdir(folder_path)
-
-    for file_name in file_names:
-        file_path = os.path.join(folder_path, file_name)
-
+    
+    for file_path in file_paths:
+        file_name = os.path.basename(file_path)
+        
         if file_name.lower().endswith(".pdf"):
             print(f"Loading PDF: {file_name}")
-            loader = PyPDFLoader(file_path)
-            pages = loader.load_and_split()
-            all_docs.extend(pages)
+            try:
+                loader = PyPDFLoader(file_path)
+                pages = loader.load_and_split()
+                all_docs.extend(pages)
+            except Exception as e:
+                print(f"Error loading PDF {file_name}: {e}")
+                
         elif file_name.lower().endswith(".txt"):
             print(f"Loading TXT: {file_name}")
-            loader = TextLoader(file_path, encoding='utf-8')
-            documents = loader.load()
-            all_docs.extend(documents)
-
+            try:
+                loader = TextLoader(file_path, encoding='utf-8')
+                documents = loader.load()
+                all_docs.extend(documents)
+            except Exception as e:
+                print(f"Error loading TXT {file_name}: {e}")
+        else:
+            print(f"Skipping unsupported file: {file_name}")
+    
     return all_docs
 
 # === Step 2: Chunk the Documents ===
@@ -107,22 +144,41 @@ def index_documents(chunks, embedding_model, qdrant_client, collection_name):
 
 # === Main Entry Point ===
 def main():
-    folder_path = "docs"  # Folder where PDFs and TXT files are stored
+    print("=== RAG Document Indexer ===")
+    print("Please select PDF and TXT files to index...")
+    
+    # Step 1: Select files using file dialog
+    selected_files = select_files()
+    if not selected_files:
+        return
+    
+    print(f"Selected {len(selected_files)} file(s):")
+    for file_path in selected_files:
+        print(f"  - {os.path.basename(file_path)}")
+    
+    print("\nStep 1: Loading documents...")
+    documents = load_documents_from_files(selected_files)
+    
+    if not documents:
+        print("No documents were loaded successfully. Exiting...")
+        return
+    
+    print(f"Loaded {len(documents)} document(s)")
 
-    print("Step 1: Loading documents...")
-    documents = load_documents_from_folder(folder_path)
-
-    print("Step 2: Chunking documents...")
+    print("\nStep 2: Chunking documents...")
     chunks = chunk_documents(documents)
+    print(f"Created {len(chunks)} chunks")
 
-    print("Step 3: Connecting to Qdrant...")
+    print("\nStep 3: Connecting to Qdrant...")
     qdrant_client, collection_name = connect_qdrant()
 
-    print("Step 4: Initializing embedding model...")
+    print("\nStep 4: Initializing embedding model...")
     embedding_model = get_nomic_embedding_model()
 
-    print("Step 5: Indexing documents...")
+    print("\nStep 5: Indexing documents...")
     index_documents(chunks, embedding_model, qdrant_client, collection_name)
+    
+    print("\n✅ Document indexing completed successfully!")
 
 if __name__ == "__main__":
     main()

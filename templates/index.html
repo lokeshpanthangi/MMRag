@@ -324,6 +324,14 @@
                     <button class="btn btn-secondary" id="clearBtn" onclick="clearChat()">
                         Clear
                     </button>
+                    <button class="btn btn-upload" id="uploadBtn" onclick="uploadDocuments()">
+                        Upload
+                    </button>
+                </div>
+
+                <div class="loading" id="uploadLoading" style="display:none;">
+                    <div class="loading-spinner"></div>
+                    Indexing documents, please wait...
                 </div>
 
                 <div class="loading" id="loading">
@@ -377,6 +385,34 @@
             .catch(error => {
                 setLoadingState(false);
                 addErrorToChat('Failed to get response: ' + error.message);
+            });
+        }
+
+        function uploadDocuments() {
+            const uploadBtn = document.getElementById('uploadBtn');
+            const uploadLoading = document.getElementById('uploadLoading');
+
+            uploadBtn.disabled = true;
+            uploadLoading.style.display = 'block';
+
+            fetch('/api/upload', {
+                method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+                uploadBtn.disabled = false;
+                uploadLoading.style.display = 'none';
+
+                if (data.status === 'Indexing started') {
+                    alert('Document indexing has started. Please wait a moment before asking questions.');
+                } else {
+                    alert('Unexpected response: ' + JSON.stringify(data));
+                }
+            })
+            .catch(error => {
+                uploadBtn.disabled = false;
+                uploadLoading.style.display = 'none';
+                alert('Failed to start indexing: ' + error.message);
             });
         }
 

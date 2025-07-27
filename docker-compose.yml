@@ -1,9 +1,7 @@
 version: '3.8'
-
 services:
   qdrant:
-    image: qdrant/qdrant:latest
-    container_name: rag-qdrant
+    image: qdrant/qdrant
     ports:
       - "6333:6333"
       - "6334:6334"
@@ -12,39 +10,3 @@ services:
     environment:
       - QDRANT__SERVICE__HTTP_PORT=6333
       - QDRANT__SERVICE__GRPC_PORT=6334
-    restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:6333/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-
-  rag-app:
-    build: .
-    container_name: rag-banking-assistant
-    ports:
-      - "5000:5000"
-    environment:
-      - OPENAI_API_KEY=${OPENAI_API_KEY}
-      - NOMIC_API_KEY=${NOMIC_API_KEY}
-      - QDRANT_HOST=qdrant
-      - QDRANT_PORT=6333
-    depends_on:
-      qdrant:
-        condition: service_healthy
-    volumes:
-      - ./docs:/app/docs
-      - ./qdrant_storage:/app/qdrant_storage
-    restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:5000"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-
-volumes:
-  qdrant_data:
-
-networks:
-  default:
-    name: rag-network
